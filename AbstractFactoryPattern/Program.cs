@@ -9,7 +9,7 @@ namespace AbstractFactoryExercise
         {
             var mentiroso = new Client(new MentiraFactory());
             Console.WriteLine($"Mentiroso: {mentiroso.DescribeYourLies()}");
-            var cuñado = new Client(new MentiraFactory());
+            var cuñado = new Client(new CuñaderíaFactory());
             Console.WriteLine($"Cuñado: {cuñado.DescribeYourLies()}");
             Console.Read();
         }
